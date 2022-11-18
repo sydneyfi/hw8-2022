@@ -1,0 +1,170 @@
+/* skip styling */
+
+.skip a{
+    background: #373737;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+   }   
+
+/* position the default position for the skip class element*/
+.skip a {
+    position: absolute;
+    top: -40px;
+   }
+
+/* selector/rule property to position the skip class element when it is in focus*/
+.skip a:focus {
+ top: 20px;
+}
+
+
+
+
+
+
+/* Nav styling */
+
+/* sets header color and margins */
+header {
+    background: #373737;
+    border-bottom: 3px solid #373737;
+    margin-bottom: 50px
+}
+
+/* sets header to flex styling */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* sets nav links to flex styling */
+.nav_links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* sets margins of header */
+.header_pos {
+    margin: 20px auto 30px auto;
+}
+
+/* nav ul li {
+    width: 10em;
+    margin: 3px;
+    color: #373737;
+    text-align: left;
+    display: inline-block;
+    letter-spacing: 2px;
+    font-family: 'Times';
+} */
+
+/* sets nav link styling */
+nav ul li a{
+    text-decoration: none;
+}
+
+/* sets margin below nav links */
+nav ul li {
+    margin-bottom: 15px;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    border-bottom: 2px solid #f4f4f4;
+    font-weight: bold;
+}
+
+/* sets link styling */
+a {
+    color: #f4f4f4;
+}
+.active a {
+    border-bottom: 2px solid #f4f4f4;
+    font-weight: bold;
+}
+
+a:visited {
+    color: #f4f4f4;
+}
+
+/* sets h1 color and font size */
+h1 {
+    font-family: 'sans-serif';
+    color: #f4f4f4;
+    font-size: 30px;
+}
+
+img {
+    display: inline-block;
+}
+
+
+
+/* iPad styling */
+@media screen and (min-width: 700px) {
+    /* sets flex of header */
+    /* header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    } */
+
+    /* sets nav links to right */
+    .nav_links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+   /* puts header at left */
+   /* .header_pos {
+    margin-left: 5px;
+   } */
+
+   nav ul li a {
+    margin: 20px;
+    /* font-size */
+   }
+
+}
+
+
+
+
+/* Computer styling */
+@media screen and (min-width: 900px) {
+    /* sets flex of header */
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* sets nav links to right */
+    /* .nav_links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    } */
+
+    /* puts header at left */
+    .header_pos {
+        margin-left: 20px;
+    }
+
+    nav ul li a {
+        margin: 10px;
+        /* font-size */
+    }
+
+    /* font size of name logo */
+    h1 {
+        font-size: 42px;
+    }
+
+}
+
